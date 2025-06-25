@@ -14,7 +14,7 @@ export default function Card3() {
                     <img className= 'fav' src={fav} />
                 </div>
             </div>
-            <div className='HouseInfo'><button className="button">More Details</button></div>
+            <div className='HouseInfo'><button className="button"  onClick={() => {window.location.href = '/Description'}}>More Details</button></div>
         </div>
     )
 }
