@@ -23,7 +23,7 @@ export default function Book(){
             return;
         }
         
-        axios.post('api/book',{name,email,sDate,eDate }).
+        axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/book`,{name,email,sDate,eDate }).
         then((res) => {
             console.log(res);
             setSuccess(true);

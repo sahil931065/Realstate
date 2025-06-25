@@ -9,7 +9,7 @@ export default function SignUp(){
     const sign= async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('api/signup', {name,email,password})
+            const res =axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/signup`, {name,email,password})
                 localStorage.setItem('token', res.data.token);
                 window.location.href = '/';
             }

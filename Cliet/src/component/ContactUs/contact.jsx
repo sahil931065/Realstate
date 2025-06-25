@@ -22,7 +22,7 @@ export default function Contact() {
             setTimeout(() => setcomplete(false), 3000); // Hide message after 3s
             return;
         }
-        axios.post('api/contactus', {name,email,message: say }).
+        axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/contactus`, {name,email,message: say }).
         then((res) => {
         console.log(res);
       setSuccess(true);

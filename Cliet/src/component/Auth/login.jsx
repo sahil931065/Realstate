@@ -12,7 +12,8 @@ export default function Login(){
     const login = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('api/login', {email,password})
+            const res = axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/login`, {email,password})
+
                 localStorage.setItem('token', res.data.token);
                 window.location.href = '/';
             }
