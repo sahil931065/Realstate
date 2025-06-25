@@ -1,0 +1,101 @@
+.Himg{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card{
+    background: white;
+    margin: 20px;
+    width: 25vw;
+    height: 50vh;
+    padding: 1.5em;
+    line-height: 1.6;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    border-radius: 20px;
+    transition: ease-in 0.8s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.cardimg{
+    width: 100%;
+    height: 50%;
+}   
+
+.cardtext{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Info{
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fav{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+h4 {
+    color:#2f80ed;
+   
+}
+h5 {
+    color: gray;
+
+}
+.HouseInfo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    color: black;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #2f80ed;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in 0.8s;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:800px) {
+    .card{
+        width: 60vw;
+    }
+    .Info{
+        width: 100%;
+    }
+    h4{
+        margin: 10px;
+        width: 100%;
+    }
+    h5{
+        margin: 10px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.whyus-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.whyus-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.whyus-intro,
+.whyus-closing {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.whyus-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.whyus-block {
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.whyus-block h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.whyus-block ul {
+  padding-left: 20px;
+}
+
+.whyus-block li {
+  margin-bottom: 8px;
+}
